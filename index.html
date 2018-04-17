@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title> Address Book</title>
+  <link rel="icon" href="css/icon.png">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="navigation">
+    <ul class="nav-list">
+        <li id="js-show-all"><img src="img/card.png" width="31"></li>
+        <li id="js-search"><img src="img/magnifier.png"></li>
+        <li id="js-add-new"><img src="img/add.png" width="31"></li>
+    </ul>
+</div>
+<div id="search-panel" class="panel">
+    <h1>Search Contacts</h1>
+    <form id="search" action="#">
+        <div id="results">
+          
+      </div>
+        <div>
+            <label>
+                <input type="text" name="search" id="search" placeholder="Enter name of contact" />
+                <button type="submit" id="searchbtn"><img src="img/search.png" width="31" id="searchbtn"></button>
+            </label>
+        </div>
+                <!-- <input type="submit" value="Submit" /> -->
+    </form>
+</div>
+    <div id="contact-panel" class="panel">
+        <form id="contact" action="#">
+
+            <div style="background-color:blue; height:20%;">
+                    <button type="submit" id="mark" onclick="alert('Contact Saved')"><img src="img/check-mark.png" width="31" id="mark"></button>
+                    <h1 class="title">Add New Contact</h1>
+
+            <div style="background-color:lightblue;height:20%;">
+                <p align="center"><img src="img/add1.png"> </p>
+            </div>
+            </div>
+            <div>
+                <label>
+                    <img src="img/contact.png" width="7%">&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="person" id="name" placeholder="Name"  required/><br>
+                </label>
+                <label>
+                        <img src="img/phone.png" width="7%">&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="phone" id="name" placeholder="Phone" required /> <br>
+                </label>
+                <label>
+                   
+                        <img src="img/envelope.png" width="7%">&nbsp;&nbsp;&nbsp; <input type="text" name="email" id="name" placeholder="Email"required />
+                </label>
+            </div>
+            <!-- <div>
+                <input type="submit" value="Submit" />
+            </div> -->
+        </form>
+    </div>
+<div id = "show-panel" class="panel">
+  
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
